@@ -1,0 +1,35 @@
+product:
+  type: lib
+  platforms: [ android, iosArm64 ]
+
+dependencies:
+  - ../domain
+  - $libs.koin.core
+  - $libs.room.runtime
+  - $libs.sqlite.bundled
+  - $libs.ktor.client.core
+  - $libs.ktor.client.content.negotiation
+  - $libs.ktor.serialization.kotlinx.json
+  - $libs.kotlinx.coroutines.core
+  - $libs.kotlinx.datetime
+
+dependencies@android:
+  - $libs.ktor.client.okhttp
+
+dependencies@ios:
+  - $libs.ktor.client.darwin
+
+settings:
+  kotlin:
+    ksp:
+      processors:
+        - $libs.room.compiler
+    serialization:
+      enabled: true
+      format: json
+
+settings@android:
+  kotlin:
+    ksp:
+      processorOptions:
+        room.schemaLocation: ./generated-db-schema/android

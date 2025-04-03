@@ -1,0 +1,6 @@
+product:
+  type: lib
+  platforms: [ android, iosArm64 ]
+
+dependencies:
+  - $libs.kotlinx.coroutines.core
