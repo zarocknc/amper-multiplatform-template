@@ -1,0 +1,15 @@
+product: android/app
+
+dependencies:
+  - androidx.collection:collection-ktx:1.4.0
+  #- $compose.foundation  # from shared
+  #- $compose.material3  # from shared
+  - androidx.activity:activity-compose:1.8.2
+  - androidx.appcompat:appcompat:1.6.1
+  - ../shared
+
+settings:
+  android:
+    namespace: com.jetbrains.sample.app
+  compose:
+      enabled: true

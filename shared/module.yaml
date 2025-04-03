@@ -1,0 +1,10 @@
+product:
+  type: lib
+  platforms: [ android, iosArm64 ]
+
+dependencies:
+  - $compose.foundation: exported
+  - $compose.material3: exported
+
+settings:
+  compose: enabled
