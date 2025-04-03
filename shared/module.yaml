@@ -6,6 +6,9 @@ dependencies:
   - $compose.foundation: exported
   - $compose.material3: exported
   - $libs.koin.core
+  - $libs.koin.compose
+  - $libs.koin.compose.viewmodel
+  - $libs.koin.compose.viewmodel.navigation
   - ../feature/food
 
 settings:
