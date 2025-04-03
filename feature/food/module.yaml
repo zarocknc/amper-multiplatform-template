@@ -1,0 +1,9 @@
+product:
+  type: lib
+  platforms: [ android, iosArm64 ]
+
+dependencies:
+  - ../../core/domain
+
+apply:
+  - ../feature.module-template.yaml

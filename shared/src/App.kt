@@ -15,7 +15,8 @@ fun App() {
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            BasicText("Hello, World!")
+            // BasicText("Hello, World!")
+            FoodScreen()
         }
     }
 }

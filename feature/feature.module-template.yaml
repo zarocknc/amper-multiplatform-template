@@ -1,0 +1,16 @@
+dependencies:
+  - $libs.koin.core
+  - $libs.koin.compose
+  - $libs.koin.compose.viewmodel
+  - $libs.koin.compose.viewmodel.navigation
+  - $compose.foundation
+  - $compose.material3
+
+settings:
+  kotlin:
+    serialization: json
+  compose:
+    enabled: true
+    resources:
+      exposedAccessors: false
+      packageName: generated.resource

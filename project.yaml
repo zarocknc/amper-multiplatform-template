@@ -1,1 +1,1 @@
-modules: [ shared, android, core/data, core/domain ]
+modules: [ shared, android, core/data, core/domain, feature/food ]
