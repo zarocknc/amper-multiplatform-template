@@ -6,7 +6,7 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 import org.koin.dsl.module
 
-val provideHttpClientModule = module {
+val networkModule = module {
     single {
         HttpClient {
             install(ContentNegotiation) {
@@ -18,4 +18,6 @@ val provideHttpClientModule = module {
             }
         }
     }
+
+    single<FoodService> { FoodService(get()) }
 }

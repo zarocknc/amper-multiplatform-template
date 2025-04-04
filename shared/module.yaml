@@ -10,6 +10,8 @@ dependencies:
   - $libs.koin.compose.viewmodel
   - $libs.koin.compose.viewmodel.navigation
   - ../feature/food
+  - ../core/domain
+  - ../core/data
 
 settings:
   compose: enabled

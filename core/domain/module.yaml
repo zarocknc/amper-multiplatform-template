@@ -4,3 +4,4 @@ product:
 
 dependencies:
   - $libs.kotlinx.coroutines.core
+  - $libs.koin.core

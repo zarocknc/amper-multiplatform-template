@@ -14,7 +14,7 @@ import kotlinx.coroutines.withContext
 class FoodRepositoryImpl(
     private val foodService: FoodService,
     private val foodDao: FoodDao,
-    private val dispatcher: CoroutineDispatcher = Dispatchers.IO
+    private val dispatcher: CoroutineDispatcher = Dispatchers.IO,
 ) : FoodRepository {
     override suspend fun getRandomFoodImage(): Result<Food> = withContext(dispatcher) {
         try {
