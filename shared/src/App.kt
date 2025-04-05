@@ -6,13 +6,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import di.sharedModule
-import org.koin.compose.KoinApplication
+import org.koin.compose.KoinMultiplatformApplication
+import org.koin.dsl.KoinConfiguration
 
 @Composable
 fun App() {
-    KoinApplication(application = {
-        modules(sharedModule)
-    }) {
+    KoinMultiplatformApplication(
+        config = KoinConfiguration(config = {
+            modules(sharedModule)
+        })
+    ) {
         MaterialTheme() {
             Column(
                 modifier = Modifier.fillMaxSize(),
@@ -24,5 +27,10 @@ fun App() {
             }
         }
     }
+//    KoinApplication(application = {
+//        modules(sharedModule)
+//    }) {
+//
+//    }
 
 }
